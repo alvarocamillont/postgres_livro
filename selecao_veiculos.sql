@@ -1,0 +1,1 @@
+select mesa_codigo, data_criacao from mesas;
