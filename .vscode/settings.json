@@ -1,0 +1,3 @@
+{
+	"pgsql.connection": "postgres://postgres:061187@127.0.0.1:5432/livro_postgres" 
+}
