@@ -140,3 +140,16 @@ values(1,
 21,
 '01/01/2016',
 '01/01/2016');
+
+insert into produtos (produto_codigo,
+produto_nome,
+produto_valor,
+produto_situacao,
+data_criacao,
+data_atualizacao)
+values ('2832',
+'SUCO DE LIMÃO',
+15,
+'C',
+'02/02/2016',
+'02/02/2016');

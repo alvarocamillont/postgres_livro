@@ -97,3 +97,12 @@ porc_comissao := 0;
 end loop;
 end
 $$ language plpgsql;
+
+
+create or replace function md5(integer)
+returns text as 
+$$
+begin
+return md5($1::text);
+end
+$$ language plpgsql;
