@@ -132,5 +132,6 @@ values ('1613',
 '01/01/2016',
 '01/01/2016');
 
-SELECT * FROM logs_produtos
+SELECT * FROM logs_produtos;
 
+drop trigger tri_log_produtos on produtos CASCADE ;

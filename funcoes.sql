@@ -98,11 +98,17 @@ end loop;
 end
 $$ language plpgsql;
 
-
-create or replace function md5(integer)
+create or replace function ttat_md5(value text)
 returns text as 
 $$
+declare 
+salt text;
 begin
-return md5($1::text);
+salt = 'T O T V S';
+return md5(value || salt );
 end
 $$ language plpgsql;
+
+select ttat_md5('ALVARO');
+
+SELECT tgname FROM pg_trigger;
